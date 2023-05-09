@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <form action="/image/encode" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br>
+        <textarea type="text" name="message" rows="8" cols="150"></textarea><br>
+        <input type="submit" value="Encode">
+    </form>
+	aaaaaaaaaaaa
+{% endblock %}

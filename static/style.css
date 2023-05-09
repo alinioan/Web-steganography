@@ -1,0 +1,58 @@
+/* Main body styles */
+body {
+	background: #fff3f3;
+	color: #111;
+}
+  
+  /* Title / Headings */
+h1, h2, h3, h4, h5, h6 {
+	color: #444444;
+}
+  
+header {
+	background-color: #fff3f3;
+}
+  .site-header > nav {
+		margin: 10px 0 0 ;
+		background-color: #819cace1;
+		border-radius: 15px;
+
+  }
+  .site-header .navbar-nav .nav-link {
+		color: #EEEEEE;
+		padding: 0.5em 1em;
+  }
+  .site-header .navbar-nav .nav-link:hover {
+		color: #ffffff;
+		border-radius: 10px;
+  }
+  .site-header .navbar-nav .nav-link.active {
+		font-weight: 500;
+  }
+
+main {
+	margin-top: 1.5rem;
+}
+
+.page-header {
+	padding-bottom: 9px;
+	margin: 20px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.text_box {
+	background-color: #FFF8F7;
+	color: #000000;
+	border: 2px solid #832e0a;
+	padding: 5px;
+	text-align: justify;
+	border-radius: 15px;
+}
+
+h1.main-title {
+	color: #136;
+	padding-bottom: 0.4em;
+	margin-top: 1rem;
+	margin-bottom: 0.7em;
+	border-bottom: 1px solid #DDDDDD;
+}
