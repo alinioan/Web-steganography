@@ -5,5 +5,33 @@
 {% endblock %}
 
 {% block body %}
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqgfffffffffffff
+	<div class="box">
+		<h1 id="iap1-homework-web-based-steganography-tool">IAP1 Homework: Web-based steganography tool</h1>
+		<hr>
+		<h2 id="1-the-steganography-">1. The steganography:</h2>
+		<ul style="font-size: 18px;">
+			<li>The steganography implementation is very simple:<ul>
+			<li>The encoding is done by extracting the pixels from the image with the help of the PIL library. The input text is turned into an array of ints based on the ascii code. For each value in a pixel the last bit is set to zero. At the same time we go through the bits of a letter and after setting the pixel to zero we set it to the bit in the letter. The First bit of the letter is represented in the first value of the first pixel. At the end if the image is not fully encoded we add 8 zeros (aka the null string terminator).</li>
+			<li>The decoding is done in a similar fashion. After extracting the pixels from the image we make a list with the last bit from each value in the pixel, then while counting the bits so we don&#39;t have more than 8, we shift each one to the left with its coresponding position and add them together to get the value for the letter. The decoding is done until we reach a null string terminator or the end of the image.</li>
+		</ul>
+		</li>
+		</ul>
+		<h2 id="2-the-website-">2. The website:</h2>
+		<ul style="font-size: 18px;">
+			<li>The website has 4 pages which all have some common elements:<ul>
+			<li>The menu bar, which was done with the help of bootsrap. In the top left you can also see our cute mascot, The Fat Racoon.</li>
+			<li>The right-side box which has links to the last image and text saved.</li>
+			<li>The copyright handle at the bottom of the page.</li>
+		</ul>
+		</li>
+			<li>The main content box is done by using a wrapper that contains both the main content box and the right-side box.</li>
+			<li>The html files use jinja templating and so there are very few lines of "code" in each file.</li>
+		</ul>
+		<h2 id="3-other-">3. Other:</h2>
+		<ul style="font-size: 18px;">
+			<li>I had a lot of fun while working on this project and researching and learing about html, css, flask, and even python. This was one of the best homework that I had this semester.</li>
+			<li>PS: I hope you like the racoon. </li>
+		</ul>
+	</div>
+
 {% endblock %}

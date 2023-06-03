@@ -5,9 +5,20 @@
 {% endblock %}
 
 {% block body %}
-    <form action="/image/decode" method="post" enctype="multipart/form-data">
-        <input type="file" name="file"><br>
-        <input type="submit" value="Decode">
-    </form>
-    adiiiiiiiiiiiiiii
+	<br>
+	<div class="box">
+		<h1>Decode image</h1>
+		<hr>
+		<h4>Select Image:</h4>
+		<form action="/image/decode" method="POST" enctype="multipart/form-data">
+			<input type="file" class="btn" name="file">
+			<input type="submit" class="btn btn-primary" value="Upload">
+		</form>
+	</div>
+	<br><hr><br>
+	<div class="box" id="w74">
+		<h4>{{ header }}</h4>
+		<p>{{ text }}</p>
+	</div>
+	<br><br>
 {% endblock %}

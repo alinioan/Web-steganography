@@ -5,10 +5,28 @@
 {% endblock %}
 
 {% block body %}
-    <form action="/image/encode" method="post" enctype="multipart/form-data">
-        <input type="file" name="file"><br>
-        <textarea type="text" name="message" rows="8" cols="150"></textarea><br>
-        <input type="submit" value="Encode">
-    </form>
-	aaaaaaaaaaaa
+	<br>
+	<div class="box">
+		<h1>Encode image</h1>
+		<hr>
+		<h4>Select Image:</h4>
+		<form action="/image/encode" method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<input type="file" name="file" id="file"><br> <br>
+				<h4>Input text:</h4>
+				<textarea type="text" name="message" id="message" rows="4" cols="80"></textarea> <br> <br>
+				<input type="submit" class="btn btn-primary" value="Encode"> <br> <br>
+			</div>
+		</form>
+	</div>
+	<br><hr><br>
+
+	<div class="box">
+		<h4>{{ header }}</h4>
+			{% if image %}
+				<img class="container" src="{{ url_for('static', filename='last_image.png') }}" alt="Encoded Image">
+				{% endif %}
+			</div>
+			<br><br>
+
 {% endblock %}
