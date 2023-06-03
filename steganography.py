@@ -92,12 +92,11 @@ def encode_image(img_name, text):
 	# add null string terminator
 	if encoded_pixels < len(pixels):
 		for i in range(8):
-			print(i)
 			zero_mask = 254 # this is 11111110 in binary
 			pixels[encoded_pixels + i] = pixels[encoded_pixels + i] & zero_mask
 	
 	image_out = create_output_image(img, pixels)
-	image_out.save('last_image.png')
+	image_out.save('static/last_image.png')
 	return image_out
 
 
